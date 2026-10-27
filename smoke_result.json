@@ -1,0 +1,11 @@
+{
+ "project": "p02",
+ "task": "beta-lactam CARBAPENEM vs OTHER (binary)",
+ "model": "one-hot(CARD 6 字段) -> GPU MLP",
+ "main_n": 6304,
+ "val_auc": 1.0,
+ "val_acc": 1.0,
+ "val_bacc": 1.0,
+ "ext1_note": "ext1=CARD family 元数据表(10250 行无标签)，冒烟级跳过",
+ "ext2_note": "ext2=BRENDA EC 原始文本(30 行无标签)，冒烟级跳过"
+}
