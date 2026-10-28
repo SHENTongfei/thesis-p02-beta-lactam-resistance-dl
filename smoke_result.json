@@ -25,10 +25,12 @@
  ],
  "n_num": 4,
  "n_cat": 7,
- "note": "已排除 class/subclass/subtype/product_name/allele 等直接定义标签的列，仅用非泄漏元数据（基因家族、范围、坐标、分类层级）建模",
+ "note": "⚠️ 泄漏：每条记录为具体耐药基因变体，基因身份(家族名/accession/坐标)可唯一决定耐药类别；剥离全部标识符后AUC仍>0.9。0.9837为身份记忆，非真实预测能力。",
  "cv_auc_mean": 0.9836614317596328,
  "cv_auc_std": 0.0027242675990870003,
  "cv_n": 5,
- "passed": true,
- "elapsed_s": 2
+ "passed": false,
+ "elapsed_s": 2,
+ "leakage": true,
+ "leakage_type": "identity_metadata"
 }
